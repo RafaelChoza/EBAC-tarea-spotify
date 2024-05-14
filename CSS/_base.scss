@@ -1,0 +1,31 @@
+$colorBack: rgb(0, 0, 0);
+$colorBlocks: rgb(20, 20, 20);
+$fontColor: rgb(255, 255, 255);
+$backIcons: rgb(105, 104, 104);
+$backBottom1: rgb(8, 8, 8);
+$backBottom2: rgb(48, 48, 48);
+
+ %blocks {
+    margin: 5px;
+    border-radius: 1rem;
+    padding: 0px;
+    background-color: $colorBlocks;
+}
+
+%icons {
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+
+@mixin laptops {
+    @media screen and (max-width:62.5rem) {@content};
+}
+
+@mixin tablets {
+    @media screen and (max-width:56rem) {@content};
+}
+

@@ -1,0 +1,300 @@
+.footer__rigth, .footer__center, .footer__left, .sidebarrigth__bottom, .sidebarrigth__top, .main__bottom, .main__top, .sidebarleft__top {
+  margin: 5px;
+  border-radius: 1rem;
+  padding: 0px;
+  background-color: rgb(20, 20, 20);
+}
+
+.footer__left .footer__album--name, .footer__left .album__photo, .sidebarrigth__top .text__album, .main__bottom .pause__icon, .sidebarleft__top .search__artists, .sidebarleft__top.home__icon, .sidebarleft__top .search__icon, .sidebarleft__top .library__icon, .sidebarleft__top .artists, .sidebarleft__top .poison, .sidebarleft__top .bonjovi, .sidebarleft__top .cinderella, .sidebarleft__top .motleycrue, .sidebarleft__top .whitelion, .sidebarleft__top .whitesnake {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: auto auto auto;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  width: 99%;
+}
+@media screen and (max-width: 62.5rem) {
+  body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+}
+
+.sidebarleft__top {
+  grid-column: 1;
+  grid-row: 1/3;
+}
+@media screen and (max-width: 62.5rem) {
+  .sidebarleft__top {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+@media screen and (max-width: 62.5rem) {
+  .sidebarleft__top {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 56rem) {
+  .sidebarleft__top {
+    font-size: 10px;
+  }
+}
+.sidebarleft__top.home__icon:hover, .sidebarleft__top .search__icon:hover, .sidebarleft__top .library__icon:hover, .sidebarleft__top .artists:hover, .sidebarleft__top .search__artists:hover, .sidebarleft__top .artists, .sidebarleft__top .poison:hover, .sidebarleft__top .bonjovi:hover, .sidebarleft__top .cinderella:hover, .sidebarleft__top .motleycrue:hover, .sidebarleft__top .whitelion:hover, .sidebarleft__top .whitesnake:hover {
+  transform: scale(1.01);
+  background-color: rgb(105, 104, 104);
+}
+.sidebarleft__top .back__artists {
+  background-color: white;
+  font-size: 0.7rem;
+  padding: 2px 13px 2px 13px;
+  color: rgb(0, 0, 0);
+  border-radius: 25px;
+}
+.sidebarleft__top .search__artists {
+  justify-content: space-between;
+}
+
+.main__top {
+  position: relative;
+  grid-column: 2;
+  grid-row: 1;
+  font-weight: 900;
+  font-size: 30px;
+}
+@media screen and (max-width: 62.5rem) {
+  .main__top {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+.main__top .img__artist img {
+  max-width: 100%;
+}
+.main__top .icons {
+  position: absolute;
+  top: 1.5%;
+  left: 1.5%;
+  cursor: pointer;
+}
+.main__top .icons2 {
+  position: absolute;
+  top: 1.5%;
+  left: 85%;
+  cursor: pointer;
+}
+.main__top .name__artist {
+  position: absolute;
+  top: 75%;
+  left: 1.5%;
+  line-height: 2px;
+}
+.main__top .name__artist .listeners {
+  font-size: 0.5rem;
+  font-weight: 100;
+}
+
+.main__bottom {
+  grid-column: 2;
+  grid-row: 2;
+  background: linear-gradient(to top, rgb(8, 8, 8), rgb(48, 48, 48));
+}
+@media screen and (max-width: 62.5rem) {
+  .main__bottom {
+    font-size: 12px;
+    grid-column: 1/3;
+    grid-row: 2;
+  }
+}
+@media screen and (max-width: 56rem) {
+  .main__bottom {
+    font-size: 10px;
+  }
+}
+.main__bottom .pause__icon .following {
+  font-size: 1rem;
+  padding: 2px 13px 2px 13px;
+  border: 1px solid gray;
+  border-radius: 25px;
+}
+.main__bottom .popular__tracks .table {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.main__bottom .popular__tracks .table .album {
+  display: flex;
+  flex-direction: column;
+}
+.main__bottom .popular__tracks .table .album__1, .main__bottom .popular__tracks .table .album__2, .main__bottom .popular__tracks .table .album__3, .main__bottom .popular__tracks .table .album__4, .main__bottom .popular__tracks .table .album__5 {
+  width: 100%;
+}
+@media screen and (max-width: 62.5rem) {
+  .main__bottom .popular__tracks .table .album__1, .main__bottom .popular__tracks .table .album__2, .main__bottom .popular__tracks .table .album__3, .main__bottom .popular__tracks .table .album__4, .main__bottom .popular__tracks .table .album__5 {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 56rem) {
+  .main__bottom .popular__tracks .table .album__1, .main__bottom .popular__tracks .table .album__2, .main__bottom .popular__tracks .table .album__3, .main__bottom .popular__tracks .table .album__4, .main__bottom .popular__tracks .table .album__5 {
+    width: 70%;
+  }
+}
+
+.pause:hover, .following:hover, .dots__icon:hover {
+  transform: scale(1.01);
+  background-color: rgb(105, 104, 104);
+}
+
+.sidebarrigth__top {
+  grid-column: 3;
+  grid-row: 1;
+  width: 100%;
+}
+@media screen and (max-width: 62.5rem) {
+  .sidebarrigth__top {
+    grid-column: 1;
+    grid-row: 5;
+  }
+}
+.sidebarrigth__top .artist__rigth {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  cursor: pointer;
+}
+.sidebarrigth__top .album__artist {
+  max-width: 99%;
+}
+.sidebarrigth__top .album__artist .guns__album {
+  width: 99%;
+}
+@media screen and (max-width: 56rem) {
+  .sidebarrigth__top .album__artist .guns__album {
+    width: 70%;
+  }
+}
+.sidebarrigth__top .text__album {
+  padding: 0px 0px 0px 0px;
+  line-height: 0.1rem;
+  font-weight: 700;
+}
+.sidebarrigth__top .text__album .tittle__album {
+  font-size: 0.8rem;
+}
+.sidebarrigth__top .artistalbum__name {
+  line-height: 0.1rem;
+  padding: 0px 0px 0px 0px;
+  font-size: 0.6rem;
+  cursor: pointer;
+}
+
+.sidebarrigth__bottom {
+  grid-column: 3;
+  grid-row: 2;
+}
+@media screen and (max-width: 62.5rem) {
+  .sidebarrigth__bottom {
+    grid-column: 2;
+    grid-row: 5;
+  }
+}
+@media screen and (max-width: 56rem) {
+  .sidebarrigth__bottom {
+    font-size: 10px;
+  }
+}
+.sidebarrigth__bottom img {
+  width: 100%;
+}
+
+.txt {
+  overflow-y: auto;
+}
+
+.footer__left {
+  display: flex;
+  grid-column: 1;
+  grid-row: 3;
+  align-items: center;
+  line-height: 0.1rem;
+  justify-content: space-between;
+}
+@media screen and (max-width: 62.5rem) {
+  .footer__left {
+    grid-column: 1;
+    grid-row: 3;
+  }
+}
+.footer__left .footer__album--name {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.footer__left .footer__band {
+  font-size: 0.5rem;
+  font-weight: 400;
+}
+
+.footer__center {
+  line-height: 0.05rem;
+}
+@media screen and (max-width: 62.5rem) {
+  .footer__center {
+    grid-column: 1/3;
+    grid-row: 4;
+  }
+}
+@media screen and (max-width: 62.5rem) {
+  .footer__center {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 56rem) {
+  .footer__center {
+    font-size: 10px;
+  }
+}
+.footer__center .time__bar {
+  justify-content: center;
+}
+.footer__center section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1rem;
+  grid-column: 2;
+  grid-row: 3;
+}
+@media screen and (max-width: 56rem) {
+  .footer__center section .bar {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 62.5rem) {
+  .footer__rigth {
+    grid-column: 2;
+    grid-row: 3;
+  }
+}
+.footer__rigth section {
+  grid-column: 3;
+  grid-row: 3;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */
